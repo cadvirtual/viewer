@@ -23,12 +23,12 @@ module.exports = {
   // Autodesk ForgeSDK configuration
 
   // this this callback URL when creating your client ID and secret
-  callbackURL: process.env.FORGE_CALLBACK_URL || '',
+  callbackURL: process.env.FORGE_CALLBACK_URL || '<adres_www>',
 
   // set enviroment variables or hard-code here
   credentials: {
-    client_id: process.env.FORGE_CLIENT_ID || '',
-    client_secret: process.env.FORGE_CLIENT_SECRET || '',
+    client_id: process.env.FORGE_CLIENT_ID || '<ID>',
+    client_secret: process.env.FORGE_CLIENT_SECRET || '<Secret>',
   },
 
   // Required scopes for your application on server-side
@@ -38,10 +38,10 @@ module.exports = {
 
   // google configuration
   google: {
-    callbackURL: process.env.GOOGLE_CALLBACK_URL || '',
+    callbackURL: process.env.GOOGLE_CALLBACK_URL || '<adres_www_google>',
     credentials: {
-      client_id: process.env.GOOGLE_CLIENT_ID || '',
-      client_secret: process.env.GOOGLE_CLIENT_SECRET || ''
+      client_id: process.env.GOOGLE_CLIENT_ID || '<ID>',
+      client_secret: process.env.GOOGLE_CLIENT_SECRET || '<Secret>'
     }
   }
 };
